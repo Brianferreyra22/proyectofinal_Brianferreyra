@@ -1,0 +1,242 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  color: Whitesmoke; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  z-index: 999; }
+
+.logo {
+  display: flex;
+  align-items: center; }
+
+.logo-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer; }
+
+.logo img {
+  height: 80px; }
+
+.navegacion {
+  display: flex;
+  align-items: center; }
+  .navegacion ul {
+    display: flex;
+    list-style: none; }
+    .navegacion ul li {
+      margin-left: 30px; }
+      .navegacion ul li a {
+        color: Whitesmoke;
+        text-decoration: none; }
+        .navegacion ul li a:hover {
+          display: flex;
+          padding: 5px;
+          text-decoration: none;
+          color: Whitesmoke;
+          border-radius: 10px;
+          justify-content: space-between;
+          background: #4f4f4f;
+          transform: scale(1.2); }
+
+main {
+  padding-top: 100px;
+  margin: 30px;
+  text-align: center;
+  text-decoration: solid; }
+
+img {
+  margin: 3px;
+  max-width: 100%;
+  height: auto; }
+
+main {
+  background-color: black;
+  color: Whitesmoke; }
+
+.titulo {
+  text-align: center; }
+  .titulo .formulario {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; }
+    .titulo .formulario fieldset {
+      border: none;
+      padding: 0;
+      margin: 0; }
+      .titulo .formulario fieldset legend {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px; }
+        .titulo .formulario fieldset legend div {
+          margin-bottom: 20px; }
+          .titulo .formulario fieldset legend div label {
+            display: block; }
+            .titulo .formulario fieldset legend div label input[type="text"] {
+              width: 100%;
+              padding: 5px;
+              font-size: 14px; }
+              .titulo .formulario fieldset legend div label input[type="text"] input[type="submit"] {
+                background-color: #4f4f4f;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer; }
+                .titulo .formulario fieldset legend div label input[type="text"] input[type="submit"]:hover {
+                  background-color: #333333; }
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 70px; }
+
+.main {
+  margin: 0px;
+  padding: 50px;
+  display: flex; }
+  .main .imagen {
+    width: 100%;
+    margin-right: 20px;
+    justify-content: space-around; }
+  .main div.contenido {
+    text-align: left;
+    color: Whitesmoke;
+    font-size: 50 PX;
+    margin: 0px;
+    padding: 5px; }
+    .main div.contenido .contenedor-max {
+      margin: 20px;
+      max-width: 500px;
+      padding: 5px;
+      align-items: center;
+      font-size: large;
+      text-align: center;
+      color: Whitesmoke; }
+    .main div.contenido h2 {
+      text-align: center;
+      color: Whitesmoke; }
+
+.videos {
+  image-resolution: 25px;
+  height: auto;
+  margin: 1rem 3rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 1rem; }
+  .videos div .spotify,
+  .videos .youtube iframe {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 80%; }
+
+/*Estilos para tablet*/
+/*mq de tablet*/
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .main .images {
+    grid-template-columns: repeat(2, 1fr); }
+    .main .images .img-2,
+    .main .images .img-4 {
+      display: block; } }
+
+@media screen and (min-width: 1025px) {
+  .main .images {
+    grid-template-columns: repeat(3, 1fr); }
+    .main .images .img-5 {
+      display: block; } }
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .contenedor .images .images {
+    grid-template-columns: repeat(2, 1fr); }
+    .contenedor .images .images .img-2,
+    .contenedor .images .images .img-4 {
+      display: block; } }
+
+@media screen and (min-width: 1025px) {
+  .contenedor .images .images {
+    grid-template-columns: repeat(3, 1fr); }
+    .contenedor .images .images .img-5 {
+      display: block; } }
+
+.contenedor .images div {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.images {
+  display: grid;
+  flex-wrap: wrap;
+  margin-top: 1rem; }
+
+.img-0,
+.img-1,
+.img-3 {
+  width: calc(100% - 2rem);
+  margin-bottom: 1rem; }
+
+.img-2,
+.img-4,
+.img-5 {
+  display: none; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  color: whitesmoke;
+  margin-left: 15px; }
+
+div .contact-button {
+  border: none;
+  background-color: transparent;
+  color: Whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: auto; }
+
+.contact-button:hover {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  background: #a8fcab;
+  transform: scale(1.2); }
+
+div .back-to-top-button {
+  border: none;
+  background-color: transparent;
+  color: Whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: auto; }
+
+.back-to-top-button:Hover {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  background: #a8fcab;
+  transform: scale(1.2); }
+
+footer h3 {
+  text-align: center;
+  margin: 0 auto;
+  flex-grow: 1; }

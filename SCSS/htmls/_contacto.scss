@@ -1,0 +1,47 @@
+@import"../Utilidades/variables";
+
+main{background-color: $Color-Principal;
+  color: $Color-letras;
+  }
+  
+
+  .titulo{
+    text-align: center;
+
+  .formulario{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    fieldset{
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      legend{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+      div{
+        margin-bottom: 20px;
+
+        label{
+          display: block;
+
+          input[type="text"]{
+            width: 100%;
+            padding: 5px;
+            font-size: 14px;
+
+        input[type="submit"]{
+          background-color: #4f4f4f;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+
+          &:hover{
+            background-color: #333333;
+
+             } } } } } } } } }

@@ -1,0 +1,123 @@
+/*Reset*/
+  @import"./Utilidades/variables";
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: $Color-Principal;
+  color: $Color-letras;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color:$Color-Principal;
+  z-index: 999;}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.logo img {
+  height: 80px;
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  
+
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      margin-left: 30px;
+
+      a {
+        color: $Color-letras;
+        text-decoration: none;
+
+        &:hover {
+          display: flex;
+          padding: 5px;
+          text-decoration: none;
+          color: $Color-letras;
+          border-radius: 10px;
+          justify-content: space-between;
+          background: $color-botone;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+
+@import"../SCSS/htmls/home";
+@import"../SCSS/htmls/contacto";
+@import"../SCSS/htmls/biografia";
+@import"../SCSS/htmls/musica";
+@import"../SCSS/htmls/fotos";
+
+  
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  color: whitesmoke;
+  margin-left: 15px;
+}
+div .contact-button {
+  border: none;
+  background-color: transparent;
+  color: $Color-letras;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+.contact-button:hover{
+ 
+  padding: 15px;
+  text-decoration: none;
+  color: $Color-Principal;
+  border-radius: 10px;
+  background: $color-bot-footer;
+  transform: scale(1.2);
+}
+
+div .back-to-top-button {
+  border: none;
+  background-color: transparent;
+  color: $Color-letras;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+.back-to-top-button:Hover{
+  padding: 5px;
+  text-decoration: none;
+  color: $Color-Principal;
+  border-radius: 10px;
+  background: $color-bot-footer;
+  transform: scale(1.2);
+}
+
+footer h3 {
+  text-align: center;
+  margin: 0 auto;
+  flex-grow: 1;
+}

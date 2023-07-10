@@ -1,0 +1,26 @@
+/*Estilos para tablet*/
+/*mq de tablet*/
+@mixin tablet {
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .images {
+      grid-template-columns: repeat(2, 1fr);
+
+      .img-2,
+      .img-4 {
+        display: block;
+      }
+    }
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1025px) {
+    .images {
+      grid-template-columns: repeat(3, 1fr);
+      
+      .img-5 {
+        display: block;
+      }
+    }
+  }
+}

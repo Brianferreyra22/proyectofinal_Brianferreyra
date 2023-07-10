@@ -1,0 +1,43 @@
+@import"../Utilidades/variables";
+
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:70px;    
+  }
+
+  .main {
+    margin: 0px;
+    padding: 50px;
+    display: flex;
+    
+  .imagen {
+    width: 100%;
+    margin-right: 20px; 
+    justify-content: space-around;
+  }
+
+div.contenido {  
+    text-align: left;
+    color: $Color-letras;
+    font-size: 50 PX;
+    margin: 0px;
+    padding: 5px;
+
+    .contenedor-max {
+        margin: 20px;
+        max-width: 500px;
+        padding: 5px;
+        align-items: center;
+        font-size: large;
+        text-align: center;
+        color: $Color-letras;
+    }
+
+    h2 {
+        text-align: center;
+        color: $Color-letras;
+    }
+
+}
+}
